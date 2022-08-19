@@ -1,0 +1,1 @@
+// Footer portion of the React portfolio
