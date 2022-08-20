@@ -19,7 +19,7 @@ function Contact() {
             <a id="resume" />
             <div className="title">Resume</div>
             <ul>
-            <li><a src={resume} >Resume Link</a></li>
+            <li><a href={resume} target="_blank" rel="noreferrer">Resume Link</a></li>
             </ul>
         </section>
         </div>
