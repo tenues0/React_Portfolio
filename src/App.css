@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+}
+
+body {
+    background-color: lightblue;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    padding: 5px;
+    color: black;
+    background-color: lightblue;
+}
+
+header nav {
+    display: flex;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    /* display: flex; */
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: underline;
+}
+
+header nav ul li a {
+  color: lightblue;
+}
+
+header nav ul li a:hover {
+  color: white;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* https://pixabay.com/photos/keyboard-black-notebook-input-1385706/ */
+.banner-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-me {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    border-radius: 50%;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+    font-size: 40px;
+    background-color: lightblue;
+    padding: 5px;
+    color: black;
+}
+
+/*
+This part of the CSS sheet marks the start of the written sections.
+ABOUT ME, PROJECTS, CONTACT ME, RESUME
+*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.title {
+    width: 200px;
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.container .about-me-desc {
+    width: 80%;
+    padding-left: 15px;
+    border-left: solid;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+/*
+PROJECTS SECTION CODE
+*/
+
+
+/* 
+Some resources used to create grid
+
+https://css-tricks.com/snippets/css/complete-guide-grid/ 
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+*/
+
+.container .grid-container {
+    border-left: solid;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+
+ .top-project {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 30px;
+  }
+
+  .top-project img {
+      width: 100%;
+  }
+
+  .top-project img:hover {
+    opacity: .5;
+}
+
+  .top-project-text {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 30px;
+    background-color: lightblue;
+    padding: 5px;
+    color: black;
+  }
+
+  .grid-item {
+    position: relative;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 10px solid rgba(0, 0, 0, 0.8); */
+    font-size: 30px;
+  }
+
+/*
+Image scources
+
+https://tenor.com/view/box-squares-patterns-sprites-gif-11205351
+https://gifer.com/en/HSYv
+*/
+  .grid-item img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .grid-item img:hover {
+    opacity: .5;
+  }
+
+  .projects-text {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 30px;
+    background-color: lightblue;
+    padding: 5px;
+    color: black;
+  }
+
+  .button-text {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 30px;
+    background-color: lightblue;
+    padding: 5px;
+    color: black;
+  }
+
+  .button2-text {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    font-size: 30px;
+    background-color: lightblue;
+    padding: 5px;
+    color: black;
+  }
+/*
+CONTACT ME CODE
+*/
+
+.container ul {
+    display: flex;
+    list-style-type: none;
+    border-left: solid;
+}
+
+.container ul li {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul li:hover {
+  color: white;
+}
+
+.container ul li a {
+    color: black;
+}
+
+.container ul li a:hover {
+  color: white;
+}
+
+footer {
+    padding: 20px;
+    color: black;
+    justify-content: center;
+    text-align:center; 
+    font-size: 30px;
+}
+
+
+
+/* Large smartphones - screen layout at 768px or smaller */
+@media screen and (min-width: 768px) {
+    body {
+      background-color: orange;
+    }
+  header {
+    background: orange;
+  }
+  header h1 {
+    color: orange;
+    background-color: black;
+    font-size: 12px;
+  }
+  header nav ul li a {
+    color: black;
+  }
+  .banner-text,
+  .top-project-text,
+  .projects-text {
+    background-color: orange;
+    font-size: 10px;
+  }
+  .button-text,
+  .button2-text {
+    font-size: 15px;
+    background-color: orange;
+  }
+  .container ul li {
+    font-size: 10px;
+  }
+  .grid-item img {
+    width: 100%;
+    max-width: 250px;
+  }
+  .title {
+    font-size: 10px;
+  }
+  footer {
+    font-size: 10px;
+  }
+}
+
+/* Large devices (desktops, large tablets 992px and up) */
+/* The screen width needs to be 992px or larger for this media query to work */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: lightgoldenrodyellow;
+      }
+    header {
+      background: lightgoldenrodyellow;
+    }
+    header h1 {
+      color: lightgoldenrodyellow;
+      background-color: black;
+      font-size: 24px;
+    }
+    header nav ul li a {
+      color: black;
+    }
+    .banner-text,
+    .top-project-text,
+    .projects-text {
+      background-color: lightgoldenrodyellow;
+      font-size: 20px;
+    }
+    .button-text,
+    .button2-text {
+      font-size: 15px;
+      background-color: lightgoldenrodyellow;
+    }
+    .container ul li {
+      font-size: 10px;
+    }
+    .grid-item img {
+      width: 100%;
+      max-width: 300px;
+    }
+    .title {
+      font-size: 20px;
+    }
+    footer {
+      font-size: 10px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* The screen width needs to be 1200px or larger for this media query to work */
+@media screen and (min-width: 1200px) {
+  body {
+      background-color: lightblue;
+    }
+  header {
+    background: lightblue;
+  }
+  header h1 {
+    color: lightblue;
+    background-color: black;
+    font-size: 48px;
+  }
+  header nav ul li a {
+    color: black;
+  }
+  .banner-text,
+  .top-project-text,
+  .projects-text {
+    background-color: lightblue;
+    font-size: 40px;
+  }
+  .grid-item img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .title {
+    font-size: 40px;
+  }
+}
+
+
+/*
+https://stackoverflow.com/questions/57266515/media-screen-and-max-width768px-not-working
+
+
+You should write media queries from small screens to large screens. Becouse last line css code overwrites to over previous css lines. For example from bootstrap;
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

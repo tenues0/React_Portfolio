@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Nav() {
+function Nav() {
   const linkStyle = { border: '1px black', padding: '5px' };
 
   return (
@@ -15,21 +15,20 @@ export default function Nav() {
         }}
       >
         <div style={linkStyle}>
-          <a href="#">Home</a>
+          <a href="#about-me">About Me</a>
         </div>
         <div style={linkStyle}>
-          <a href="#">Login</a>
+          <a href="#projects">Work</a>
         </div>
         <div style={linkStyle}>
-          <a href="#">Register</a>
+          <a href="#contact-me">Contact</a>
         </div>
         <div style={linkStyle}>
-          <a href="#">About</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#">Contact</a>
+          <a href="#resume">Resume</a>
         </div>
       </section>
     </nav>
   );
 }
+
+export default Nav;
