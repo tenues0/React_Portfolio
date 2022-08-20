@@ -17,7 +17,7 @@ function Contact() {
             <a id="resume" />
             <div className="title">Resume</div>
             <ul>
-            <li><a href="./teddy_resume.pdf">Resume Link</a></li>
+            <li><a href='./TheodoreAyoub.pdf'>Resume Link</a></li>
             </ul>
         </section>
         </div>
