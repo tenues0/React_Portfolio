@@ -1,5 +1,7 @@
 import React from 'react';
 
+import resume from '../images/TheodoreAyoub.pdf';
+
 function Contact() {
     return (
         <div>
@@ -17,7 +19,7 @@ function Contact() {
             <a id="resume" />
             <div className="title">Resume</div>
             <ul>
-            <li><a href='./TheodoreAyoub.pdf'>Resume Link</a></li>
+            <li><a src={resume} >Resume Link</a></li>
             </ul>
         </section>
         </div>
